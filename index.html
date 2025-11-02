@@ -8,28 +8,32 @@
   </head>
   <body>
     <div class="space">
-      <input type="text" id="number" />
+      <textarea id="number" rows="2" cols="20" readonly></textarea><br />
     </div>
     <div class="numbers">
       <button onclick="inputNumber(7)">7</button>
       <button onclick="inputNumber(8)">8</button>
       <button onclick="inputNumber(9)">9</button>
+      
       <button onclick="inputNumber(4)">4</button>
       <button onclick="inputNumber(5)">5</button>
       <button onclick="inputNumber(6)">6</button>
+      
       <button onclick="inputNumber(1)">1</button>
       <button onclick="inputNumber(2)">2</button>
       <button onclick="inputNumber(3)">3</button>
+      
+      <button onclick="inputNumber(0)">0</button>
       <button onclick="inputNumber('.')">.</button>
     </div>
     <div class="operations">
       <button onclick="deleteNumber()">C</button>
       <button onclick="clearDisplay()">CE</button>
-      <button>+</button>
-      <button>-</button>
-      <button>x</button>
-      <button>/</button>
-      <button>=</button>
+      <button onclick="inputNumber('+')">+</button>
+      <button onclick="inputNumber('-')">-</button>
+      <button onclick="inputNumber('*')">x</button>
+      <button onclick="inputNumber('/')">/</button>
+      <button onclick="calculateResult()">=</button>
     </div>
 
     <script src="/app.js"></script>
